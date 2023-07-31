@@ -1,15 +1,15 @@
-# Ethereum Proof-of-Stake Devnet
+# Indo Proof-of-Stake Devnet
 
-This repository provides a docker-compose file to run a fully-functional, local development network for Ethereum with proof-of-stake enabled. This configuration uses [Prysm](https://github.com/prysmaticlabs/prysm) as a consensus client and [go-ethereum](https://github.com/ethereum/go-ethereum) for execution.
+This repository provides a docker-compose file to run a fully-functional, local development network for Indo with proof-of-stake enabled. This configuration uses [Prysm](https://github.com/prysmaticlabs/prysm) as a consensus client and [go-ethereum](https://github.com/ethereum/go-ethereum) for execution.
 
-This sets up a single node development network with 64 deterministically-generated validator keys to drive the creation of blocks in an Ethereum proof-of-stake chain. Here's how it works:
+This sets up a single node development network with 64 deterministically-generated validator keys to drive the creation of blocks in an Indo proof-of-stake chain. Here's how it works:
 
 1. We initialize a go-ethereum, proof-of-work development node from a genesis config
 2. We initialize a Prysm beacon chain, proof-of-stake development node from a genesis config
 3. We then start mining in go-ethereum proof-of-work, and concurrently run proof-of-stake using Prysm
 4. Once the mining difficulty of the go-ethereum node reaches `50`, the node switches to proof-of-stake mode by letting Prysm drive the consensus of blocks
 
-The development net is fully functional and allows for the deployment of smart contracts and all the features that also come with the Prysm consensus client such as its rich set of APIs for retrieving data from the blockchain. This development net is a great way to understand the internals of Ethereum proof-of-stake and to mess around with the different settings that make the system possible.
+The development net is fully functional and allows for the deployment of smart contracts and all the features that also come with the Prysm consensus client such as its rich set of APIs for retrieving data from the blockchain. This development net is a great way to understand the internals of Indo proof-of-stake and to mess around with the different settings that make the system possible.
 
 ## Requirements
 
