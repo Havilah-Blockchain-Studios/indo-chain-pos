@@ -89,8 +89,8 @@ services:
     depends_on:
       geth:
         condition: service_started
-      create-beacon-chain-genesis:
-        condition: service_completed_successfully
+      # create-beacon-chain-genesis:
+      #   condition: service_completed_successfully
     ports:
       - 4000:4000
       - 3500:3500
