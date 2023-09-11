@@ -1,2 +1,5 @@
 #!/bin/bash
-docker-compose up -d
+#stop all services
+docker-compose stop
+#initailize
+docker-compose start geth-genesis 
