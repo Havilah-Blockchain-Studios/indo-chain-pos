@@ -30,11 +30,12 @@ Then, clone the github:
 ```
 git clone /path-to-github/
 ```
-Start the servers using docker
+Start the servers using bash scripts and docker
 
 ```
 cd /path-to-github/
-docker compose up -d
+bash start.sh
+bash validator.sh
 ```
 
 You will see the following:
