@@ -55,9 +55,9 @@ services:
     ports:
       - 8551:8551
       - 8545:8545
-    # depends_on:
-    #   geth-genesis:
-    #     condition: service_completed_successfully
+    depends_on:
+      geth-genesis:
+        condition: service_completed_successfully
     volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
@@ -89,8 +89,8 @@ services:
     depends_on:
       geth:
         condition: service_started
-      # create-beacon-chain-genesis:
-      #   condition: service_completed_successfully
+      create-beacon-chain-genesis:
+        condition: service_completed_successfully
     ports:
       - 4000:4000
       - 3500:3500
