@@ -2,8 +2,8 @@
 #stop all services
 docker-compose stop
 #start the geth services
-docker-compose start indo-chain-pos-geth-1
+docker-compose start geth
 #start the beacon chain
-docker-compose start indo-chain-pos-beacon-chain-1
+docker-compose start beacon-chain
 #start the validator chain
-docker-compose start indo-chain-pos-validator-1
+docker-compose start validator
