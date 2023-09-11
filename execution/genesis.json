@@ -18,7 +18,6 @@
 		"grayGlacierBlock": 0,
 		"shanghaiTime": 1681499865,
 		"terminalTotalDifficulty": 0,
-		"terminalTotalDifficultyPassed": true,
 		"clique": {
 			"period": 5,
 			"epoch": 30000
