@@ -55,10 +55,10 @@ services:
     ports:
       - 8551:8551
       - 8545:8545
-    depends_on:
-      geth-genesis:
-        condition: service_completed_successfully
-    volumes:
+    # depends_on:
+    #   geth-genesis:
+    #     condition: service_completed_successfully
+    # volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
       - ./jwtsecret:/execution/jwtsecret
@@ -82,7 +82,7 @@ services:
       - --rpc-host=0.0.0.0
       - --contract-deployment-block=0
       - --grpc-gateway-host=0.0.0.0
-      - --execution-endpoint=http://geth:8551
+      - --execution-endpoint=http://localhost:8551
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
       - --suggested-fee-recipient=0xbd877cb457a66eb883f4bfd9ce39d040dd0f6a9b
