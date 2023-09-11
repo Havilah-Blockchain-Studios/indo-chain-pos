@@ -58,7 +58,7 @@ services:
     # depends_on:
     #   geth-genesis:
     #     condition: service_completed_successfully
-    # volumes:
+    volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
       - ./jwtsecret:/execution/jwtsecret
