@@ -106,7 +106,7 @@ services:
   validator:
     image: "gcr.io/prysmaticlabs/prysm/validator:latest"
     command:
-      - --beacon-rpc-provider=http://localhost:4000
+      - --beacon-rpc-provider=localhost:4000
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
