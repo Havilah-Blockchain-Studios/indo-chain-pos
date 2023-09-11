@@ -116,4 +116,3 @@ services:
         condition: service_started
     volumes:
       - ./consensus:/consensus
-    network_mode: "host"
